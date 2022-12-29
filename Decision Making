@@ -1,0 +1,22 @@
+#!/bin/bash
+
+clear
+
+#variable
+NUMBER=16
+APPLE=16
+KING=LUIS
+
+#condition
+if [[ $NUMBER -gt 15 ]]; then
+	echo 1
+fi
+if [[ $NUMBER -eq $APPLE ]]; then
+	echo 2
+fi
+if [[ ($APPLE -eq 12) || ($KING = LUIS) ]]; then
+	echo 3
+fi
+if [[ $(($NUMBER + $APPLE)) -le 32 ]]; then
+	echo 4
+fi
