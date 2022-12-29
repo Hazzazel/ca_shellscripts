@@ -9,7 +9,6 @@ c=(14 7 5 7)
 
 #incorpore les élément commun a dans un nouveau tableau x et b dans un nouveau tableau y.
 #comparaison des tebleau x et y et incorporation des élément commun x et y (a et b) dans un nouveau tableau z qui servira de comparaison pour c.
-
 for x in "${a[@]}"; do
 	#pas de commande util ici, laisser le corp de la commande vide
 	for y in "${b[@]}"; do
@@ -21,7 +20,6 @@ done
 
 #même principe que plus haut avec le tableau c dans le nouveau tableau i et z qui vas dans K pour la comparaison.
 #ensuite création de j qui contient les element commun de i et k (donc de tout les tableau).
-
 for i in "${c[@]}"; do
 	#pas de commande util ici, laisser le corp de la commande vide
 	for k in "${z[@]}"; do
@@ -32,7 +30,6 @@ for i in "${c[@]}"; do
 done
 
 #affichage du tableau j qui contien l'élément commun des tableau a, b, c.
-
 echo ${j[@]}
 
 
